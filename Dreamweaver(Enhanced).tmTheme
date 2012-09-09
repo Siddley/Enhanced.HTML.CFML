@@ -180,13 +180,13 @@
 			<key>name</key>
 			<string>decision Operators</string>
 			<key>scope</key>
-			<string>keyword.operator.decision</string>
+			<string>keyword.operator.decision.cfscript, keyword.operator.assignment.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#0000FF</string>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<!-- Query operators -->
@@ -270,7 +270,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#006600</string>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<!-- quoted strings catchall -->
@@ -336,7 +336,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF00FF</string>
+				<string>#800080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -367,7 +367,7 @@
 				<string>#F8F8F8</string>
 			</dict>
 		</dict>
-		<!-- variables
+		<!-- variables  -->
 		<dict>
 			<key>name</key>
 			<string>Variables</string>
@@ -378,9 +378,9 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FF00FF</string>
+				<string>#800080</string>
 			</dict>
-		</dict>  -->
+		</dict>
 		<!-- HTML Constant characters -->
 		<dict>
 			<key>name</key>
@@ -408,10 +408,6 @@
 				<string>#234A97</string>
 			</dict>
 		</dict> -->
-
-
-
-
 		<dict>
 			<key>name</key>
 			<string>String.regexp</string>
@@ -457,13 +453,13 @@
 			<key>name</key>
 			<string>Support.function</string>
 			<key>scope</key>
-			<string>support.function</string>
+			<string>support.function, punctuation.definition.function-parameters.begin.cfscript, punctuation.definition.function-parameters.end.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#0033FF</string>
+				<string>#8000ff</string>
 			</dict>
 		</dict>
 		<!-- <dict>
