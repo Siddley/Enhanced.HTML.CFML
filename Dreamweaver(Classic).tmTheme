@@ -44,7 +44,7 @@
 				<key>foreground</key>
 				<string>#5A525F</string>
 				<key>background</key>
-				<string>#FFFFCC</string>
+				<string>#FFFF99</string>
 			</dict>
 		</dict>
 		<!-- HTML comments -->
@@ -250,7 +250,7 @@
 			<key>name</key>
 			<string>Quoted String (html)</string>
 			<key>scope</key>
-			<string>string.quoted.double.cfml, string.quoted.single.cfml</string>
+			<string>string.quoted.double.cfml, string.quoted.single.cfml, string.quoted.double.html string.quoted.single.cfscript, string.quoted.single.html string.quoted.double.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -315,7 +315,7 @@
 				<string>#000000</string>
 			</dict>
 		</dict>
-		<!-- punctuation seperator -->
+		<!-- punctuation separator -->
 		<dict>
 			<key>name</key>
 			<string>punctuation.seperator</string>
