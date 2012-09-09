@@ -8,9 +8,11 @@ Synopsis
 
 This package is designed to provide rich HTML & CFML syntax colouring such as that seen in Adobe™ Dreamweaver™.
 
+**Screenshots available at https://github.com/Siddley/Enhanced.HTML.CFML/wiki/Enhanced.HTML.CFML-Screen-Shots**
+
 The "Dreamweaver (Classic)" colour scheme attempts to mimic the actual Dreamweaver™ look as accurately as possible.
 
-The "Dreamweaver (Enhanced)" colour scheme (coming soon) incorporates some changes and enhancements to the classic look while maintaining much the same feel.
+The "Dreamweaver (Enhanced)" colour scheme incorporates some changes and enhancements to the classic look to better highlight embedded cf variables and functions while maintaining much the same feel.
 
 Other templates (coming soon) are my attempt to use Ethan Schoonover's awesome solarized colour scheme to create a dark and light version with rich syntax highlighting similar to the Dreamweaver™ idea.
 
