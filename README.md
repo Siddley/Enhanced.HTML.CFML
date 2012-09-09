@@ -1,7 +1,7 @@
 Enhanced.HTML.CFML Package for Sublime Text 2 (Beta)
 ====================================================
 
-NOTE: This package is brand new as of 9 September 2012 and is subject to possible dramatic and radical changes. It will not break anything, but may cause you some frustration, use at your own discretion.
+*NOTE: This package is brand new as of 9 September 2012 and is subject to possible dramatic and radical changes. It will not break anything, but may cause you some frustration, use at your own discretion.*
 
 Synopsis
 --------
@@ -18,31 +18,28 @@ Other templates (coming soon) are my attempt to use Ethan Schoonover's awesome s
 Installation
 ------------
 
-1 Find your Sublime Text 2 Packages folder
+1. Find your Sublime Text 2 Packages folder
 
     - OS X: ~/Library/Application Support/Sublime Text 2/Packages/
     - Windows: %APPDATA%/Sublime Text 2/Packages/
     - Linux: ~/.Sublime Text 2/Packages/
 
 
-2 If you have Git, clone this repo to /your-packages-folder/Enhanced.HTML.CFML/
+2. If you have Git, clone this repo to /your-packages-folder/Enhanced.HTML.CFML/
 
 or,
 
-2 Download this repo using the "ZIP" button above, unzip and place the files in /your-packages-folder/Enhanced.HTML.CFML/
+2. Download this repo using the "ZIP" button above, unzip and place the files in /your-packages-folder/Enhanced.HTML.CFML/
 
 
 Settings/Usage
 --------------
 
-1 Modify the /your-packages-folder/Enhanced.HTML.CFML/Enhanced.HTML.CFML.sublime-settings for the file extensions you would like to open with this package. By default it is set to .htm only, you may wish to add .html as well.
+1. Modify the /your-packages-folder/Enhanced.HTML.CFML/Enhanced.HTML.CFML.sublime-settings for the file extensions you would like to open with this package. By default it is set to .htm only, you may wish to add .html as well.
 
-2 If you are using coldfusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already.
+2. If you are using coldfusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already.
 
-4 Open the file  /your-packages-folder/Coldfusion/Coldfusion.tmLanguage and serach for "text.html.basic" on about line 490 and change it to "text.html.ehhanced"
+4. Open the file  /your-packages-folder/Coldfusion/Coldfusion.tmLanguage and serach for "text.html.basic" on about line 490 and change it to "text.html.ehhanced"
 
-5 Select your syntax colour choice from the menu Preferences > Color Scheme > Enhanced.HTML.CFML
-
-
-That's it, you should be up and running, enjoy!
+5. Select your syntax colour choice from the menu Preferences > Color Scheme > Enhanced.HTML.CFML
 
