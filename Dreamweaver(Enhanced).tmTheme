@@ -58,9 +58,9 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#999999</string>
+				<string>#5A525F</string>
 				<key>background</key>
-				<string></string>
+				<string>#FFFFCC</string>
 			</dict>
 		</dict>
 		<!-- numbers -->
