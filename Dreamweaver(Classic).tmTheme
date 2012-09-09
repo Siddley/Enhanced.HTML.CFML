@@ -457,7 +457,7 @@
 			<key>name</key>
 			<string>Support.function</string>
 			<key>scope</key>
-			<string>support.function</string>
+			<string>support.function, punctuation.definition.function-parameters.begin.cfscript, punctuation.definition.function-parameters.end.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
