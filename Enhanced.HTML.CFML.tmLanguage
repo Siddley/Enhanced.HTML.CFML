@@ -556,10 +556,6 @@
 					<key>include</key>
 					<string>#tag-stuff</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#tag-img-attribute</string>
-				</dict>
 			</array>
 		</dict>
 		<!-- anchors and links -->
@@ -591,10 +587,6 @@
 				<dict>
 					<key>include</key>
 					<string>#tag-stuff</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#tag-link-attribute</string>
 				</dict>
 			</array>
 		</dict>
@@ -628,16 +620,12 @@
 					<key>include</key>
 					<string>#tag-stuff</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#tag-table-attribute</string>
-				</dict>
 			</array>
 		</dict>
 		<!-- Begin Forms Inline -->
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?(?i:form|input|textarea|select|option|optgroup|button|label|legend)\b)</string>
+			<string>(&lt;/?(?i:input|textarea|select|option|optgroup|button|label|legend)\b)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -663,10 +651,6 @@
 				<dict>
 					<key>include</key>
 					<string>#tag-stuff</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#tag-form-attribute</string>
 				</dict>
 			</array>
 		</dict>
