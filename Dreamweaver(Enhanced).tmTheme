@@ -356,7 +356,7 @@
 			<key>name</key>
 			<string>Invalid – Illegal</string>
 			<key>scope</key>
-			<string>invalid.illegal</string>
+			<string>invalid.illegal, meta.scope.between-output-tags.cfml string.unescaped.hash</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>

@@ -4,15 +4,15 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<!-- <string>htm</string>
 		<string>html</string>
-		<string>htm</string>
 		<string>shtml</string>
 		<string>xhtml</string>
 		<string>phtml</string>
 		<string>inc</string>
 		<string>tmpl</string>
 		<string>tpl</string>
-		<string>ctp</string>
+		<string>ctp</string> -->
 	</array>
 	<key>firstLineMatch</key>
 	<string>&lt;!(?i:DOCTYPE)|&lt;(?i:html)|&lt;\?(?i:php)</string>
@@ -37,65 +37,9 @@
 	<key>keyEquivalent</key>
 	<string>^~H</string>
 	<key>name</key>
-	<string>Enhanced.HTML.CFML</string>
+	<string>Enhanced HTML</string>
 	<key>patterns</key>
 	<array>
-		<dict>
-			<key>begin</key>
-			<string>(&lt;)([a-zA-Z0-9:]++)(?=[^&gt;]*&gt;&lt;/\2&gt;)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.tag.html</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(&gt;)(&lt;)(/)(\2)(&gt;)</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.begin.html meta.scope.between-tag-pair.html</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.tag.html</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.tag.any.html</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#tag-stuff</string>
-				</dict>
-			</array>
-		</dict>
 		<dict>
 			<key>begin</key>
 			<string>(&lt;\?)(xml)</string>
@@ -365,9 +309,18 @@
 							<key>name</key>
 							<string>comment.block.js</string>
 						</dict>
+						<!-- highlights cfml tags in script blocks -->
+						<dict>
+						    <key>include</key>
+						    <string>text.html.cfm</string>
+						</dict>
 						<dict>
 							<key>include</key>
 							<string>#php</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#nest-hash</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -413,11 +366,11 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- Start block defs -->
-		<!-- Begin Forms Block -->
+		<!-- Start upgraded block defs -->
+		<!-- forms block -->
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?)((?i:form|fieldset)\b)</string>
+			<string>(&lt;/?)((?i:form|fieldset|textarea)\b)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -451,7 +404,7 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- Begin object Block -->
+		<!-- object block -->
 		<dict>
 			<key>begin</key>
 			<string>(&lt;/?)((?i:object|applet)\b)</string>
@@ -525,8 +478,8 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- Start inline defs -->
-		<!-- Img/object -->
+		<!-- Start upgraded inline defs -->
+		<!-- img inline -->
 		<dict>
 			<key>begin</key>
 			<string>(&lt;/?(?i:img|area|map|param)\b)</string>
@@ -558,7 +511,7 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- anchors and links -->
+		<!-- links inline -->
 		<dict>
 			<key>begin</key>
 			<string>(&lt;/?(?i:a|base)\b)</string>
@@ -590,7 +543,7 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- Tables -->
+		<!-- tables inline -->
 		<dict>
 			<key>begin</key>
 			<string>(&lt;/?(?i:table|tr|td|th|tbody|thead|tfoot|col|colgroup|caption)\b)</string>
@@ -622,10 +575,10 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- Begin Forms Inline -->
+		<!-- forms inline -->
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?(?i:input|textarea|select|option|optgroup|button|label|legend)\b)</string>
+			<string>(&lt;/?(?i:input|select|option|optgroup|button|label|legend)\b)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -723,6 +676,64 @@
 			</dict>
 			<key>name</key>
 			<string>meta.tag.other.html</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#tag-stuff</string>
+				</dict>
+			</array>
+		</dict>
+		<!-- Gereral definition moved from the top of the HTML def to lower
+		     priority so it doesn't override new specific tag defs -->
+		<dict>
+			<key>begin</key>
+			<string>(&lt;)([a-zA-Z0-9:]++)(?=[^&gt;]*&gt;&lt;/\2&gt;)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.begin.html</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.html</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(&gt;)(&lt;)(/)(\2)(&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.end.html</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.begin.html meta.scope.between-tag-pair.html</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.begin.html</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.html</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.end.html</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.tag.any.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1064,7 +1075,6 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.html</string>
 		</dict>
-
 		<key>tag-id-attribute</key>
 		<dict>
 			<key>begin</key>
@@ -1202,8 +1212,14 @@
 					<string>string.escaped.hash.html</string>
 				</dict>
 				<dict>
+					<key>match</key>
+					<string>#(?!(([a-zA-Z_$]+(\.?[\w$]+)*((\[.*\])|(\(.*\)))?)|(\(.*\)))#)</string>
+					<key>name</key>
+					<string>string.unescaped.hash.html</string>
+				</dict>
+				<dict>
 					<key>begin</key>
-					<string>(#)(?=(([a-zA-Z_]+(\.?\w+)*(\(.*\))?)|(\(.*\)))#)</string>
+					<string>(#)(?=(([a-zA-Z_$]+(\.?[\w$]+)*((\[.*\])|(\(.*\)))?)|(\(.*\)))#)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1234,8 +1250,6 @@
 				</dict>
 			</array>
 		</dict>
-		<!-- end added -->
-
 	</dict>
 	<key>scopeName</key>
 	<string>text.html.enhanced</string>

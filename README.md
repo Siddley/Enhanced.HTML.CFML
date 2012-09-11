@@ -1,7 +1,7 @@
 Enhanced.HTML.CFML Package for Sublime Text 2 (Beta)
 ====================================================
 
-*NOTE: This package is brand new as of 9 September 2012 and is subject to possible dramatic and radical changes. It will not break anything, but may cause you some frustration, use at your own discretion.*
+*NOTE: This package is brand new as of 9 September 2012 and as such is a work in progress and subject to possible dramatic and radical changes. It will not break anything, but may cause you some frustration, use at your own discretion.*
 
 Synopsis
 --------
@@ -27,21 +27,21 @@ Installation
     - Linux: ~/.Sublime Text 2/Packages/
 
 
-2. If you have Git, clone this repo to /your-packages-folder/Enhanced.HTML.CFML/
+2. If you have Git, you can clone this repo to /your-packages-folder/EnhancedHTML/
 
 or,
 
-2. Download this repo using the "ZIP" button above, unzip and place the files in /your-packages-folder/Enhanced.HTML.CFML/
+2. Download this repo using the "ZIP" button above, unzip and place the files in /your-packages-folder/EnhancedHTML/
 
 
 Settings/Usage
 --------------
 
-1. Modify the /your-packages-folder/Enhanced.HTML.CFML/Enhanced.HTML.CFML.sublime-settings for the file extensions you would like to open with this package. By default it is set to .htm only, you may wish to add .html as well.
+1. Modify the /your-packages-folder/EnhancedHTML/EnhancedHTML.sublime-settings for the file extensions you would like to open with this package. By default it is set to .htm only, you may wish to add .html as well.
 
 2. If you are using coldfusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already.
 
 4. Open the file  /your-packages-folder/Coldfusion/Coldfusion.tmLanguage and serach for "text.html.basic" on about line 490 and change it to "text.html.ehhanced"
 
-5. Select your syntax colour choice from the menu Preferences > Color Scheme > Enhanced.HTML.CFML
+5. Select your syntax colour choice from the menu Preferences > Color Scheme > EnhancedHTML
 
