@@ -217,12 +217,12 @@
 				<string>#009A1A</string>
 			</dict>
 		</dict>
-		<!-- variables between cfoutput tags -->
+		<!-- variables between cfoutput and cfmail tags -->
 		<dict>
 			<key>name</key>
 			<string>variables between cfoutput tags</string>
 			<key>scope</key>
-			<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end</string>
+			<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml constant.other, meta.scope.between-output-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end, meta.scope.between-mail-tags.cfml variable, meta.scope.between-mail-tags.cfml constant.other, meta.scope.between-mail-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-end</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -250,7 +250,7 @@
 			<key>name</key>
 			<string>function names and braces</string>
 			<key>scope</key>
-			<string>meta.scope.between-output-tags.cfml support.function, meta.scope.between-output-tags.cfml punctuation.definition.function-parameters, source.cfscript.embedded entity.name.function-call.cfscript, source.cfscript.embedded support.function, source.cfscript.embedded punctuation.definition.function-parameters, string.quoted.double.cfml support.function, string.quoted.single.cfml support.function, string.quoted.double.cfml punctuation.definition.function-parameters, string.quoted.single.cfml punctuation.definition.function-parameters, source.sql.embedded support.function, source.sql.embedded punctuation.definition.function-parameters</string>
+			<string>meta.scope.between-output-tags.cfml support.function, meta.scope.between-output-tags.cfml punctuation.definition.function-parameters, meta.scope.between-mail-tags.cfml support.function, meta.scope.between-mail-tags.cfml punctuation.definition.function-parameters,source.cfscript.embedded entity.name.function-call.cfscript, source.cfscript.embedded support.function, source.cfscript.embedded punctuation.definition.function-parameters, string.quoted.double.cfml support.function, string.quoted.single.cfml support.function, string.quoted.double.cfml punctuation.definition.function-parameters, string.quoted.single.cfml punctuation.definition.function-parameters, source.sql.embedded support.function, source.sql.embedded punctuation.definition.function-parameters</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -276,7 +276,7 @@
 			<key>name</key>
 			<string>Hashes</string>
 			<key>scope</key>
-			<string>meta.scope.between-output-tags.cfml punctuation.definition.hash.begin,meta.scope.between-output-tags.cfml punctuation.definition.hash.end</string>
+			<string>meta.scope.between-output-tags.cfml punctuation.definition.hash.begin,meta.scope.between-output-tags.cfml punctuation.definition.hash.end, meta.scope.between-mail-tags.cfml punctuation.definition.hash.begin,meta.scope.between-mail-tags.cfml punctuation.definition.hash.end</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -300,7 +300,7 @@
 			<key>name</key>
 			<string>Invalid – Illegal</string>
 			<key>scope</key>
-			<string>invalid.illegal, meta.scope.between-output-tags.cfml string.unescaped.hash</string>
+			<string>invalid.illegal, meta.scope.between-output-tags.cfml string.unescaped.hash, meta.scope.between-mail-tags.cfml string.unescaped.hash</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -405,6 +405,62 @@
 				<string>bold</string>
 				<key>foreground</key>
 				<string>#811F24</string>
+			</dict>
+		</dict>
+		<!-- useful for css files (stylesheets) -->
+		<dict>
+			<key>name</key>
+			<string>keywords</string>
+			<key>scope</key>
+			<string>meta.at-rule.charset.css, meta.selector.css, punctuation.section.property-list.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, source.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF00FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>comments</string>
+			<key>scope</key>
+			<string>punctuation.definition.comment.css, comment.block.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>properties</string>
+			<key>scope</key>
+			<string>support.type.property-name.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>functions and variables</string>
+			<key>scope</key>
+			<string>support.function.misc.css, punctuation.section.function.css, meta.property-value.css, constant.numeric.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0000ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>quoted strings</string>
+			<key>scope</key>
+			<string>punctuation.definition.string.begin.css, punctuation.definition.string.end.css, string.quoted.double.css, string.quoted.single.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#008000</string>
 			</dict>
 		</dict>
 		<!-- useful for markup text files, not for html or cfml -->
