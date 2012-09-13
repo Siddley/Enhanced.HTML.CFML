@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Sidd</string>
+	<string>Siddley - https://github.com/Siddley</string>
 	<key>comment</key>
-	<string>Dreamweaver-like syntax highlighting for cfml and html</string>
+	<string>Enhanced Dreamweaver-like syntax highlighting for cfml and html</string>
 	<key>name</key>
-	<string>Dreamweaver</string>
+	<string>Dreamweaver Enhanced</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -31,7 +31,7 @@
 				<string>6</string>
 			</dict>
 		</dict>
-		<!-- CF comments -->
+		<!-- cf comments -->
 		<dict>
 			<key>name</key>
 			<string>CF Comment</string>
@@ -47,7 +47,7 @@
 				<string>#FFFFCC</string>
 			</dict>
 		</dict>
-		<!-- HTML comments -->
+		<!-- html comments -->
 		<dict>
 			<key>name</key>
 			<string>HTML Comment</string>
@@ -63,18 +63,18 @@
 				<string>#EEEEEE</string>
 			</dict>
 		</dict>
-		<!-- numbers -->
+		<!-- html Constant characters -->
 		<dict>
 			<key>name</key>
-			<string>Constant</string>
+			<string>HTML Constant characters</string>
 			<key>scope</key>
-			<string>constant.numeric</string>
+			<string>constant.character.entity.html</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
 				<key>foreground</key>
-				<string>#FF0000</string>
+				<string></string>
 			</dict>
 		</dict>
         <!-- js source code -->
@@ -91,7 +91,7 @@
 				<string>#000000</string>
 			</dict>
 		</dict>
-		<!-- Coldfusion Tags -->
+		<!-- coldfusion tags -->
 		<dict>
 			<key>name</key>
 			<string>Coldfusion Tag</string>
@@ -105,10 +105,10 @@
 				<string>#950000</string>
 			</dict>
 		</dict>
-		<!-- XML & HTML Tags -->
+		<!-- xml & html tags -->
 		<dict>
 			<key>name</key>
-			<string>XML Tags</string>
+			<string>XML tags</string>
 			<key>scope</key>
 			<string>meta.tag.no-content.xml,meta.tag.xml,meta.tag.preprocessor.xml,meta.tag.sgml,meta.tag.block.any.html,meta.tag.inline.any.html,meta.tag.structure.any.html,meta.tag.any.html</string>
 			<key>settings</key>
@@ -119,7 +119,7 @@
 				<string>#003399</string>
 			</dict>
 		</dict>
-		<!-- HTML Table Tags -->
+		<!-- html table tags -->
 		<dict>
 			<key>name</key>
 			<string>HTML Table Tags</string>
@@ -133,7 +133,7 @@
 				<string>#009999</string>
 			</dict>
 		</dict>
-		<!-- HTML img Tags -->
+		<!-- html img tags -->
 		<dict>
 			<key>name</key>
 			<string>HTML img Tags</string>
@@ -147,7 +147,7 @@
 				<string>#990099</string>
 			</dict>
 		</dict>
-		<!-- HTML form Tags -->
+		<!-- html form tags -->
 		<dict>
 			<key>name</key>
 			<string>HTML form Tags</string>
@@ -161,7 +161,7 @@
 				<string>#FF9900</string>
 			</dict>
 		</dict>
-		<!-- HTML anchor Tags -->
+		<!-- html link tags -->
 		<dict>
 			<key>name</key>
 			<string>HTML anchor Tags</string>
@@ -175,147 +175,91 @@
 				<string>#006600</string>
 			</dict>
 		</dict>
-		<!-- decision operators -->
+		<!-- number constants -->
 		<dict>
 			<key>name</key>
-			<string>decision Operators</string>
+			<string>Numbers</string>
 			<key>scope</key>
-			<string>keyword.operator.decision.cfscript, keyword.operator.assignment.cfscript</string>
+			<string>constant.numeric,constant.language</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#800080</string>
+				<string>#FF0000</string>
 			</dict>
 		</dict>
-		<!-- Query operators -->
+		<!-- keyword operators -->
 		<dict>
 			<key>name</key>
-			<string>Query Operators</string>
+			<string>Operators</string>
 			<key>scope</key>
-			<string>keyword.other.DML</string>
+			<string>keyword.operator</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#009A1A</string>
 			</dict>
 		</dict>
-		<!-- other operators -->
+		<!-- query operators -->
 		<dict>
 			<key>name</key>
-			<string>Other Operators</string>
+			<string>query keywords</string>
 			<key>scope</key>
-			<string>keyword.operator.logical,keyword.operator.concat,keyword.operator.assignment</string>
+			<string>keyword.other.DML, support.function.aggregate.sql, keyword.other.alias.sql, keyword.other.order.sql</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#0000FF</string>
+				<string>#009A1A</string>
 			</dict>
 		</dict>
-		<!-- keyword catchall -->
+		<!-- variables between cfoutput tags -->
 		<dict>
 			<key>name</key>
-			<string>Other Keywords or Operators</string>
+			<string>variables between cfoutput tags</string>
 			<key>scope</key>
-			<string>keyword |operator</string>
+			<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#663399</string>
+				<string>#5400A6</string>
 			</dict>
 		</dict>
-		<!-- storage catchall -->
+		<!-- variables in cfscript -->
 		<dict>
 			<key>name</key>
-			<string>Storage</string>
+			<string>variables</string>
 			<key>scope</key>
-			<string>storage</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#A71D5D</string>
-			</dict>
-		</dict>
-		<!-- bright blue quoted strings -->
-		<dict>
-			<key>name</key>
-			<string>Quoted String (html)</string>
-			<key>scope</key>
-			<string>string.quoted.double.cfml, string.quoted.single.cfml</string>
+			<string>source.cfscript.embedded variable, source.cfscript.embedded constant, meta.tag.block.cf variable, meta.tag.inline.cf variable, source.cfscript.embedded  punctuation.definition.bracket-begin, source.cfscript.embedded punctuation.definition.bracket-end, source.sql.embedded variable.other, source.sql.embedded constant.other, source.sql.embedded  punctuation.definition.bracket-begin, source.sql.embedded punctuation.definition.bracket-end</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#0000FF</string>
+				<string>#5400A6</string>
 			</dict>
 		</dict>
-		<!-- green quoted strings -->
+		<!-- functions -->
 		<dict>
 			<key>name</key>
-			<string>Quoted String (cf)</string>
+			<string>function names and braces</string>
 			<key>scope</key>
-			<string>string.quoted.double.cfscript, string.quoted.single.cfscript</string>
+			<string>meta.scope.between-output-tags.cfml support.function, meta.scope.between-output-tags.cfml punctuation.definition.function-parameters, source.cfscript.embedded entity.name.function-call.cfscript, source.cfscript.embedded support.function, source.cfscript.embedded punctuation.definition.function-parameters, string.quoted.double.cfml support.function, string.quoted.single.cfml support.function, string.quoted.double.cfml punctuation.definition.function-parameters, string.quoted.single.cfml punctuation.definition.function-parameters, source.sql.embedded support.function, source.sql.embedded punctuation.definition.function-parameters</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#800080</string>
+				<string>#8200FF</string>
 			</dict>
 		</dict>
-		<!-- quoted strings catchall -->
-		<dict>
-			<key>name</key>
-			<string>Quoted String (cf)</string>
-			<key>scope</key>
-			<string>string.quoted.double, string.quoted.single</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#0000FF</string>
-			</dict>
-		</dict>
-		<!-- support catchall -->
-		<dict>
-			<key>name</key>
-			<string>Support</string>
-			<key>scope</key>
-			<string>support</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#691C97</string>
-			</dict>
-		</dict>
-		<!-- unquoted variable names -->
-		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>source.cfscript.embedded.cfml variable.other.cfscript,constant.other,source.cfscript.embedded.cfml variable.language.cfscript</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<!-- punctuation seperator -->
+		<!-- punctuation separator
 		<dict>
 			<key>name</key>
 			<string>punctuation.seperator</string>
@@ -326,32 +270,32 @@
 				<key>foreground</key>
 				<string>#234A97</string>
 			</dict>
-		</dict>
-		<!-- hashes -->
+		</dict> -->
+		<!-- hashes embedded in html -->
 		<dict>
 			<key>name</key>
 			<string>Hashes</string>
 			<key>scope</key>
-			<string>punctuation.definition.hash.begin,punctuation.definition.hash.end</string>
+			<string>meta.scope.between-output-tags.cfml punctuation.definition.hash.begin,meta.scope.between-output-tags.cfml punctuation.definition.hash.end</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#800080</string>
+				<string>#5400A6</string>
 			</dict>
 		</dict>
+		<!-- hashes embedded in cfml -->
 		<dict>
 			<key>name</key>
-			<string>Invalid – Deprecated</string>
+			<string>Hashes</string>
 			<key>scope</key>
-			<string>invalid.deprecated</string>
+			<string>punctuation.definition.hash.begin.cfml, punctuation.definition.hash.end.cfml, meta.inline.hash.cfscript</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold italic underline</string>
 				<key>foreground</key>
-				<string>#B52A1D</string>
+				<string>#5400A6</string>
 			</dict>
 		</dict>
+		<!-- illegal or invalid characters -->
 		<dict>
 			<key>name</key>
 			<string>Invalid – Illegal</string>
@@ -367,47 +311,63 @@
 				<string>#F8F8F8</string>
 			</dict>
 		</dict>
-		<!-- variables  -->
+		<!-- html quoted strings -->
 		<dict>
 			<key>name</key>
-			<string>Variables</string>
+			<string>Quoted String (cf)</string>
 			<key>scope</key>
-			<string>variable</string>
+			<string>string.quoted.double.html, string.quoted.single.html</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#800080</string>
+				<string>#0000FF</string>
 			</dict>
 		</dict>
-		<!-- HTML Constant characters -->
+		<!-- cfml quoted strings -->
 		<dict>
 			<key>name</key>
-			<string>HTML Constant characters</string>
+			<string>Quoted String (html)</string>
 			<key>scope</key>
-			<string>constant.character.entity.html</string>
+			<string>string.quoted.double.cfml, string.quoted.single.cfml</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
-				<key>foreground</key>
 				<string></string>
+				<key>foreground</key>
+				<string>#0000FF</string>
 			</dict>
 		</dict>
-		<!-- <dict>
+		<!-- cfscript quoted strings -->
+		<dict>
 			<key>name</key>
-			<string>String variable</string>
+			<string>Quoted String (cf)</string>
 			<key>scope</key>
-			<string>string variable</string>
+			<string>meta.scope.between-output-tags.cfml string.quoted.double.cfscript, meta.scope.between-output-tags.cfml string.quoted.single.cfscript, source.cfscript.embedded string.quoted.double.cfscript, source.cfscript.embedded string.quoted.single.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#234A97</string>
+				<string>#506900</string>
 			</dict>
-		</dict> -->
+		</dict>
+		<!-- invalid code -->
+		<dict>
+			<key>name</key>
+			<string>Invalid – Deprecated</string>
+			<key>scope</key>
+			<string>invalid.deprecated</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold italic underline</string>
+				<key>foreground</key>
+				<string>#B52A1D</string>
+			</dict>
+		</dict>
+		<!-- regex (useful for .re files, not for html or cfml) -->
 		<dict>
 			<key>name</key>
 			<string>String.regexp</string>
@@ -447,48 +407,10 @@
 				<string>#811F24</string>
 			</dict>
 		</dict>
-
-		<!-- function names -->
+		<!-- useful for markup text files, not for html or cfml -->
 		<dict>
 			<key>name</key>
-			<string>Support.function</string>
-			<key>scope</key>
-			<string>support.function, punctuation.definition.function-parameters.begin.cfscript, punctuation.definition.function-parameters.end.cfscript</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#8000ff</string>
-			</dict>
-		</dict>
-		<!-- <dict>
-			<key>name</key>
-			<string>Support.constant</string>
-			<key>scope</key>
-			<string>support.constant</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#B4371F</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Support.variable</string>
-			<key>scope</key>
-			<string>support.variable</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#234A97</string>
-			</dict>
-		</dict> -->
-		<dict>
-			<key>name</key>
-			<string>Markup.list</string>
+			<string>markup list</string>
 			<key>scope</key>
 			<string>markup.list</string>
 			<key>settings</key>
@@ -501,7 +423,7 @@
 			<key>name</key>
 			<string>Markup.heading</string>
 			<key>scope</key>
-			<string>markup.heading | markup.heading entity.name</string>
+			<string>markup.heading, markup.heading entity.name</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
