@@ -4,7 +4,7 @@
 
 This package is designed to provide rich HTML & CFML (Coldfusion) syntax colouring such as that seen in Adobe™ Dreamweaver™.
 
-**Screenshots available at https://github.com/Siddley/Enhanced.HTML.CFML/wiki/Enhanced.HTML.CFML-Screen-Shots**
+**Screenshots available at https://github.com/Siddley/Enhanced.HTML.CFML/wiki/Enhanced-HTML-and-CFML-Screen-Shots**
 
  * The "Dreamweaver (Classic)" colour scheme attempts to mimic the actual Dreamweaver™ look as accurately as possible.
 
