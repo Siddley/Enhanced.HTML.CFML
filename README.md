@@ -1,7 +1,6 @@
 Enhanced.HTML.CFML Package for Sublime Text 2 (Beta)
 ====================================================
 
-*NOTE: This package is brand new as of 9 September 2012 and as such is a work in progress and subject to possible dramatic and radical changes. It will not break anything, but may cause you some frustration, use at your own discretion.*
 
 Synopsis
 --------
