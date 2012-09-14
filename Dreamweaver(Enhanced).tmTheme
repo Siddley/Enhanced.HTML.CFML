@@ -36,7 +36,7 @@
 			<key>name</key>
 			<string>CF Comment</string>
 			<key>scope</key>
-			<string>comment.block.cfml,comment.line.cfml,comment.line.html,meta.tag.block.cf.script.cfml comment.line.double-slash.cfscript,meta.tag.block.cf.script.cfml comment.block.cfscript</string>
+			<string>comment.block.cfml,comment.line.cfml,meta.tag.block.cf.script.cfml comment.line.double-slash.cfscript,meta.tag.block.cf.script.cfml comment.block.cfscript</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -89,6 +89,20 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#000000</string>
+			</dict>
+		</dict>
+		<!-- js strings -->
+		<dict>
+			<key>name</key>
+			<string>js</string>
+			<key>scope</key>
+			<string>string.quoted.double.js, string.quoted.single.js</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000ff</string>
 			</dict>
 		</dict>
 		<!-- coldfusion tags -->
