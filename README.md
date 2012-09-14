@@ -1,9 +1,6 @@
-Enhanced.HTML.CFML Package for Sublime Text 2 (Beta)
-====================================================
+# Enhanced.HTML.CFML Package for Sublime Text 2 (Beta)
 
-
-Synopsis
---------
+### Synopsis
 
 This package is designed to provide rich HTML & CFML syntax colouring such as that seen in Adobe™ Dreamweaver™.
 
@@ -15,9 +12,14 @@ The "Dreamweaver (Enhanced)" colour scheme incorporates some changes and enhance
 
 Other templates (coming soon) are my attempt to use Ethan Schoonover's awesome solarized colour scheme to create a dark and light version with rich syntax highlighting similar to the Dreamweaver™ idea.
 
+## Installation
 
-Installation
-------------
+The recommended method of installation is via Package Control.
+
+Package Control
+
+Follow instructions on http://wbond.net/sublime_packages/package_control
+Install using Package Control: Install > ColdFusion package
 
 1. Find your Sublime Text 2 Packages folder
 
