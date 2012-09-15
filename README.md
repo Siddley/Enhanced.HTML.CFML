@@ -39,9 +39,10 @@ _The recommended method of installation is via Package Control._
 
 ## Settings/Usage
 
-1. The file `"/your-packages-folder/Enhanced HTML and CFML/EnhancedHTML.sublime-settings"` sets the file extensions you would like to open with this package. By default it is set to `.htm` and `.html` only. You may wish to add others.
+1. Select your syntax colour choice from the menu `Preferences > Color Scheme > Enhanced HTML and CFML`
 
-2. If you are using coldfusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already.
+2. If you are using coldfusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already. There are no other settings necessary, cfm and cfml templates will automatically work correctly.
 
-3. Select your syntax colour choice from the menu `Preferences > Color Scheme > Enhanced HTML and CFML`
+3. The file `"/your-packages-folder/Enhanced HTML and CFML/EnhancedHTML.sublime-settings"` sets the file extensions you would like to open with this package. By default it is set to `.htm` and `.html` only. You may wish to add others.
+
 
