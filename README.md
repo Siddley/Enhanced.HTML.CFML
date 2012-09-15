@@ -13,8 +13,10 @@ Adobe™ Dreamweaver™.
    highlight embedded cf variables and functions while maintaining much the same feel.
 
  * Other templates (coming soon) will attempt to: 
-    * use Ethan Schoonover's awesome solarized colour scheme to create a 
-      dark and light version with rich syntax highlighting similar to the Dreamweaver™ idea, and to
+   * Use Ethan Schoonover's awesome solarized colour scheme to create a 
+     dark and light version with rich syntax highlighting similar to the Dreamweaver™ idea
+   * Simulate other common Coldfusion coding tools such as CFBuilder
+   * Suggestions are welcome, please raise an issue to request features
 
 
 ## Installation  
