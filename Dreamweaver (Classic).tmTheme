@@ -329,30 +329,6 @@
 				<string>#506900</string>
 			</dict>
 		</dict>
-		<!-- hashes embedded in html
-		<dict>
-			<key>name</key>
-			<string>Hashes</string>
-			<key>scope</key>
-			<string>meta.scope.between-output-tags.cfml punctuation.definition.hash.begin,meta.scope.between-output-tags.cfml punctuation.definition.hash.end, meta.scope.between-mail-tags.cfml punctuation.definition.hash.begin,meta.scope.between-mail-tags.cfml punctuation.definition.hash.end</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5400A6</string>
-			</dict>
-		</dict> -->
-		<!-- hashes embedded in cfml
-		<dict>
-			<key>name</key>
-			<string>Hashes</string>
-			<key>scope</key>
-			<string>punctuation.definition.hash.begin.cfml, punctuation.definition.hash.end.cfml, meta.inline.hash.cfscript</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5400A6</string>
-			</dict>
-		</dict> -->
 		<!-- illegal or invalid characters -->
 		<dict>
 			<key>name</key>
@@ -470,7 +446,7 @@
 			<key>name</key>
 			<string>keywords</string>
 			<key>scope</key>
-			<string>meta.at-rule.charset.css, meta.selector.css, punctuation.section.property-list.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, source.css</string>
+			<string>meta.at-rule.charset.css, meta.selector.css, punctuation.section.property-list.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.section.function.css, source.css </string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -492,7 +468,7 @@
 			<key>name</key>
 			<string>properties</string>
 			<key>scope</key>
-			<string>support.type.property-name.css</string>
+			<string>meta.property-name.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -503,7 +479,7 @@
 			<key>name</key>
 			<string>functions and variables</string>
 			<key>scope</key>
-			<string>support.function.misc.css, punctuation.section.function.css, meta.property-value.css, constant.numeric.css</string>
+			<string>meta.property-value.css, constant.numeric.css, support.function.misc.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -514,7 +490,7 @@
 			<key>name</key>
 			<string>quoted strings</string>
 			<key>scope</key>
-			<string>punctuation.definition.string.begin.css, punctuation.definition.string.end.css, string.quoted.double.css, string.quoted.single.css</string>
+			<string>punctuation.definition.string.begin.css, punctuation.definition.string.end.css, string.quoted.double.css, string.quoted.single.css, string.quoted.double.attribute-value.css, string.quoted.single.attribute-value.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
