@@ -52,4 +52,18 @@ _The recommended method of installation is via Package Control._
 
 3. The file `"/your-packages-folder/Enhanced HTML and CFML/EnhancedHTML.sublime-settings"` sets the file extensions `.htm` and `.html` to open with enhanced highligting. You may wish to add others.
 
+## Credits
+ * Dreamweaver™ is a registered trademark of Adobe Systems Incorporated
+ * The "Solarized" portion of this package is derived from the Ethan Schoonover's Solarized project at http://ethanschoonover.com/solarized
+ 
+## License
 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Enhanced HTML and CFML" </span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Siddley/Enhanced.HTML.CFML" property="cc:attributionName" rel="cc:attributionURL">Siddley</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+
+#### Attribution Conditions
+ * Cite Siddley as the original author of the work and provide a link to https://github.com/Siddley/Enhanced.HTML.CFML
+ * Include the credits that are included on this page
+
+## Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
