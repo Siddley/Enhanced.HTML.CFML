@@ -940,7 +940,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#93a1a1</string><!-- base1 -->
+					<string>#808080</string><!-- nickel -->
 					<key>background</key>
 					<string></string>
 				</dict>
@@ -955,7 +955,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string>bold</string>
 					<key>foreground</key>
-					<string>#cb4b16</string><!-- orange -->
+					<string>#ff00ff</string><!-- pink -->
 					<key>background</key>
 					<string></string>
 				</dict>
@@ -985,7 +985,22 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string>bold</string>
 					<key>foreground</key>
-					<string>#6c71c4</string><!-- violet -->
+					<string>#0000ff</string><!-- blueberry -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: dictionary string values</string>
+				<key>scope</key>
+				<string>meta.structure.dictionary.value.json, constant.language.json, constant.numeric.json, meta.structure.dictionary.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#008000</string><!-- clover -->
 					<key>background</key>
 					<string></string>
 				</dict>
@@ -994,13 +1009,13 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>json: string values</string>
 				<key>scope</key>
-				<string>meta.structure.array.json string.quoted.double.json, meta.structure.dictionary.value.json, constant.language.json, constant.numeric.json</string>
+				<string>meta.structure.array.json string.quoted.double.json</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#2aa198</string><!-- cyan -->
+					<string>#ff00ff</string><!-- pink -->
 					<key>background</key>
 					<string></string>
 				</dict>
