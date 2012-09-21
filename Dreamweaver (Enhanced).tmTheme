@@ -98,7 +98,7 @@
 				<key>name</key>
 				<string>cfml: coldfusion tag</string>
 				<key>scope</key>
-				<string>meta.tag.inline.cf, meta.tag.block.cf,source.js.embedded.html entity.name.tag.script.html, source.js.embedded.html  punctuation.definition.tag.html, source.js.embedded.html  entity.other.attribute-name.html, source.js.embedded.html  entity.other.attribute-name.cfml</string>
+				<string>meta.tag.inline.cf,	meta.tag.block.cf, source.js.embedded.html entity.name.tag.script.html, source.js.embedded.html punctuation.definition.tag.html, source.js.embedded.html entity.other.attribute-name.html, source.js.embedded.html entity.other.attribute-name.cfml, source.css.embedded.html entity.name.tag.style.html, source.css.embedded.html punctuation.definition.tag.html, source.css.embedded.html entity.other.attribute-name.html, source.css.embedded.html entity.other.attribute-name.cfml</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -407,13 +407,24 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>css: attribute names</string>
+				<string>css: attribute selector</string>
 				<key>scope</key>
-				<string>entity.other.attribute-name.attribute.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css, meta.attribute-selector.css</string>
+				<string>meta.attribute-selector.css, entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.id.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#cb4b16</string><!-- orange -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: attribute names</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name.attribute.css, entity.other.attribute-name.class.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ff00ff</string><!-- pink -->
 				</dict>
 			</dict>
 			<dict>
