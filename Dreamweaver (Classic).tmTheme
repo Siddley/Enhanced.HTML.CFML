@@ -104,7 +104,7 @@
 					<key>fontStyle</key>
 					<string>bold</string>
 					<key>foreground</key>
-					<string>#950000</string><!-- umber -->
+					<string>#950000</string><!-- burnt umber -->
 				</dict>
 			</dict>
 			<!-- sgml & doctype tags -->
@@ -118,7 +118,7 @@
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#0080ff</string><!-- sky -->
+					<string>#0080ff</string><!-- aqua -->
 				</dict>
 			</dict>
 			<!-- xml & html tags -->
@@ -160,7 +160,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#990099</string><!-- mauve -->
+					<string>#990099</string><!-- purple -->
 				</dict>
 			</dict>
 			<!-- html form tags -->
@@ -216,7 +216,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000FF</string><!-- royal -->
+					<string>#0000FF</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- query operators -->
@@ -272,7 +272,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000FF</string><!-- royal -->
+					<string>#0000FF</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- hashes embedded in html -->
@@ -326,7 +326,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- cfml quoted strings -->
@@ -340,7 +340,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- cfscript quoted strings -->
@@ -413,7 +413,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#cb4b16</string><!-- orange -->
+					<string>#ff00ff</string><!-- pink -->
 				</dict>
 			</dict>
 			<dict>
@@ -468,7 +468,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -479,7 +479,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#8200ff</string><!-- purple -->
+					<string>#ff00ff</string><!-- pink -->
 				</dict>
 			</dict>
 			<dict>
@@ -508,11 +508,11 @@
 				<key>name</key>
 				<string>css: at-rules</string>
 				<key>scope</key>
-				<string>meta.at-rule.charset.css, meta.at-rule.font-face.css, meta.at-rule.import.css, meta.at-rule.media.css</string>
+				<string>meta.at-rule.charset.css, meta.at-rule.font-face.css, meta.at-rule.import.css, meta.at-rule.media.css, punctuation.terminator.rule.css, punctuation.section.property-list.css, source.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#cb4b16</string><!-- orange -->
+					<string>#ff00ff</string><!-- pink -->
 				</dict>
 			</dict>
 			<!-- Javascript code -->
@@ -576,7 +576,7 @@
 					<key>background</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -613,7 +613,7 @@
 					<key>background</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -637,7 +637,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#990099</string><!-- mauve -->
+					<string>#990099</string><!-- purple -->
 				</dict>
 			</dict>
 			<dict>
@@ -659,7 +659,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#990099</string><!-- mauve -->
+					<string>#990099</string><!-- purple -->
 				</dict>
 			</dict>
 			<dict>
@@ -710,7 +710,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#8200ff</string><!-- purple -->
+					<string>#8200ff</string><!-- mauve -->
 				</dict>
 			</dict>
 			<dict>
@@ -806,7 +806,7 @@
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -845,7 +845,7 @@
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#8000ff</string><!-- purple -->
+					<string>#8000ff</string><!-- mauve -->
 				</dict>
 			</dict>
 			<dict>

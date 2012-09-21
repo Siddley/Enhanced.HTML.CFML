@@ -326,7 +326,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- cfml quoted strings -->
@@ -340,7 +340,7 @@
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<!-- cfscript quoted strings -->
@@ -468,7 +468,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -576,7 +576,7 @@
 					<key>background</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -613,7 +613,7 @@
 					<key>background</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
@@ -806,7 +806,7 @@
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#0000ff</string><!-- royal -->
+					<string>#0000ff</string><!-- blueberry -->
 				</dict>
 			</dict>
 			<dict>
