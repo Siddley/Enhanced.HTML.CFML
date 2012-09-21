@@ -6,22 +6,22 @@ This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlig
 
 ### Features
 
-##### ColdFusion  
+##### ColdFusion
 
   * Rich syntax highlighting of ColdFusion tags and script elements.
   * Accurate highlighting of illegal unescaped hash `#` gotchas embedded in HTML code.
   * Correct highlighting of ColdFusion elements only if they are legal, e.g. between `<cfoutput>` tags.
-  * Enhanced highlighting of HTML tags to ease tag recognition in complex embedded code.  
-  
-##### Other syntaxes supported with rich highlighting  
+  * Enhanced highlighting of HTML tags to ease tag recognition in complex embedded code.
+
+##### Other syntaxes supported with rich highlighting
 
   * embedded JavaScript and `.js` files.
   * embedded styles and `.css` files.
   * markdown `.md`, `.cr` and `.creole` files.
   * HTML `.htm` and `.html` files.
   * `.JSON` and `.sublime-settings` files.
-  
-##### Colour Themes  
+
+##### Colour Themes
 
   * **Dreamweaver (Classic)** colour theme. Attempts to mimic the actual Adobe™ Dreamweaver™ look as accurately as possible.
   * **Dreamweaver (Enhanced)** colour theme. Incorporates some changes and enhancements to the classic look to better highlight embedded ColdFusion variables and functions while maintaining much the same feel.
@@ -75,6 +75,6 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
