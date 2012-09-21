@@ -409,7 +409,7 @@
 				<key>name</key>
 				<string>css: attribute selector</string>
 				<key>scope</key>
-				<string>meta.attribute-selector.css, entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.id.css</string>
+				<string>meta.attribute-selector.css, entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css,  entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.id.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -420,7 +420,7 @@
 				<key>name</key>
 				<string>css: attribute names</string>
 				<key>scope</key>
-				<string>entity.other.attribute-name.attribute.css, entity.other.attribute-name.class.css</string>
+				<string>entity.other.attribute-name.attribute.css,  entity.other.attribute-name.class.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
