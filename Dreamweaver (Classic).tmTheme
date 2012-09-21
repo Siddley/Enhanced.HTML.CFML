@@ -451,17 +451,6 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>css: rule terminator</string>
-				<key>scope</key>
-				<string>punctuation.terminator.rule.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#ff0000</string><!-- scarlet -->
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
 				<string>css: quoted strings</string>
 				<key>scope</key>
 				<string>string.quoted.double.attribute-value.css, string.quoted.double.css, string.quoted.single.css, string.unquoted.attribute-value.css</string>
