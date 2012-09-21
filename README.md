@@ -5,26 +5,29 @@
 This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlighting in Sublime Text 2.
 
 ### Features
- * ColdFusion
-   * Rich syntax highlighting of ColdFusion tags and script elements.
-   * Accurate highlighting of illegal unescaped hash `#` gotchas embedded in HTML code.
-   * Correct highlighting of ColdFusion elements only if they are legal, e.g. between `<cfoutput>` tags.
-   * Enhanced highlighting of HTML tags to ease tag recognition in complex embedded code.
 
- * Other syntaxes supported with rich highlighting
-   * embedded JavaScript and `.js` files.
-   * embedded styles and `.css` files.
-   * markdown files.
-   * HTML.
-   * `.JSON` and `.sublime-settings` files.
+##### ColdFusion  
 
- * Colour Themes
-   * Dreamweaver (Classic) colour theme. Attempts to mimic the actual Adobe™ Dreamweaver™ look as accurately as possible.
-   * Dreamweaver (Enhanced) colour theme. Incorporates some changes and enhancements to the classic look to better highlight embedded ColdFusion variables and functions while maintaining much the same feel.
-   * Siddley (solarized) (coming soon). Uses Ethan Schoonover's awesome solarized colour scheme to create both a
-     dark and light version with rich syntax highlighting.
-   * CFBuilder™ colour theme (coming soon). Attempts to mimic the actual Adobe™ CFBuilder™ look as accurately as possible.
-   * Suggestions are welcome, please raise an issue to request features
+  * Rich syntax highlighting of ColdFusion tags and script elements.
+  * Accurate highlighting of illegal unescaped hash `#` gotchas embedded in HTML code.
+  * Correct highlighting of ColdFusion elements only if they are legal, e.g. between `<cfoutput>` tags.
+  * Enhanced highlighting of HTML tags to ease tag recognition in complex embedded code.  
+  
+##### Other syntaxes supported with rich highlighting  
+
+  * embedded JavaScript and `.js` files.
+  * embedded styles and `.css` files.
+  * markdown `.md`, `.cr` and `.creole` files.
+  * HTML `.htm` and `.html` files.
+  * `.JSON` and `.sublime-settings` files.
+  
+##### Colour Themes  
+
+  * **Dreamweaver (Classic)** colour theme. Attempts to mimic the actual Adobe™ Dreamweaver™ look as accurately as possible.
+  * **Dreamweaver (Enhanced)** colour theme. Incorporates some changes and enhancements to the classic look to better highlight embedded ColdFusion variables and functions while maintaining much the same feel.
+  * **Siddley (Solarized)** (coming soon). Uses Ethan Schoonover's awesome solarized colour scheme to create both a dark and light version with rich syntax highlighting.
+  * **CFBuilder** colour theme (coming soon). Attempts to mimic the actual Adobe™ CFBuilder™ look as accurately as possible.
+  * Suggestions are welcome, please raise an issue to request features
 
 ## Installation
 
@@ -54,13 +57,13 @@ _The recommended method of installation is via Package Control._
 
 1. Select your syntax colour choice from the menu `Preferences > Colour Scheme > Enhanced HTML and CFML`
 
-2. If you are using ColdFusion you will need the "Coldfusion" package from https://github.com/atomi/ColdFusion if you don't have it already. There are no other settings necessary, `cfm` and `cfml` templates will automatically work correctly.
+2. If you are using ColdFusion you will need the "Coldfusion" package from <https://github.com/SublimeText/ColdFusion> if you don't have it already. There are no other settings necessary, `cfm` and `cfml` templates will automatically work correctly.
 
 3. The file `"/your-packages-folder/Enhanced HTML and CFML/EnhancedHTML.sublime-settings"` sets the file extensions `.htm` and `.html` to open with enhanced highlighting. You may wish to add others.
 
 ## Credits
  * Dreamweaver™ is a registered trademark of Adobe Systems Incorporated
- * The "Solarized" portion of this package is derived from the Ethan Schoonover's Solarized project at http://ethanschoonover.com/solarized
+ * The "Solarized" portion of this package is derived from the Ethan Schoonover's Solarized project at <http://ethanschoonover.com/solarized>
 
 ## License
 
@@ -74,4 +77,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
 
-Siddley can be contacted at https://github.com/Siddley/Enhanced.HTML.CFML
+Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
