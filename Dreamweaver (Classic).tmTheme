@@ -920,9 +920,9 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#cb4b16</string><!-- orange -->
-					<key>background</key>
 					<string></string>
+					<key>background</key>
+					<string>#ffe4e2</string><!-- rouge -->
 				</dict>
 			</dict>
 			<dict>
@@ -935,9 +935,9 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#2aa198</string><!-- cyan -->
-					<key>background</key>
 					<string></string>
+					<key>background</key>
+					<string>#daffce</string><!-- apple -->
 				</dict>
 			</dict>
 			<dict>
@@ -950,7 +950,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string>italic</string>
 					<key>foreground</key>
-					<string>#b58900</string><!-- yellow -->
+					<string>#0080ff</string><!-- aqua -->
 					<key>background</key>
 					<string></string>
 				</dict>
