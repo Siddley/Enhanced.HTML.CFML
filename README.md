@@ -20,6 +20,7 @@ This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlig
   * markdown `.md`, `.cr` and `.creole` files.
   * HTML `.htm` and `.html` files.
   * `.JSON` and `.sublime-settings` files.
+  * Sublime `diff`
 
 ##### Colour Themes
 
@@ -62,7 +63,7 @@ _The recommended method of installation is via Package Control._
 3. The file `"/your-packages-folder/Enhanced HTML and CFML/EnhancedHTML.sublime-settings"` sets the file extensions `.htm` and `.html` to open with enhanced highlighting. You may wish to add others.
 
 ## Credits
- * Dreamweaver™ is a registered trademark of Adobe Systems Incorporated
+ * Dreamweaver™ and CFBuilder™ are registered trademarks of Adobe Systems Incorporated
  * The "Solarized" portion of this package is derived from the Ethan Schoonover's Solarized project at <http://ethanschoonover.com/solarized>
 
 ## License
