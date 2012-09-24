@@ -730,7 +730,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: special characters</string>
 				<key>scope</key>
-				<string>constant.character.escape.markdown, constant.other.reference.link.markdown</string>
+				<string>constant.character.escape.markdown, constant.other.reference.link.markdown, constant.character.escape.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -741,20 +741,33 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: bold</string>
 				<key>scope</key>
-				<string>markup.bold</string>
+				<string>markup.bold.markdown, markup.bold.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
 					<string>bold</string>
 					<key>foreground</key>
-					<string>#268bd2</string><!-- orange -->
+					<string>#268bd2</string><!-- sky -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: bold italic</string>
+				<key>scope</key>
+				<string>markup.bold.markdown markup.italic.markdown, markup.bold.creole markup.italic.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold italic</string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- sky -->
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>markdown: headings</string>
 				<key>scope</key>
-				<string>markup.heading</string>
+				<string>markup.heading.markdown, markup.heading.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -767,7 +780,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: italic</string>
 				<key>scope</key>
-				<string>markup.italic</string>
+				<string>markup.italic.markdown, markup.italic.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -778,9 +791,22 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>markdown: italic bold</string>
+				<key>scope</key>
+				<string>markup.italic.markdown markup.bold.markdown, markup.italic.creole markup.bold.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold italic</string>
+					<key>foreground</key>
+					<string>#657b83</string><!-- baase00 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>markdown: numbered list</string>
 				<key>scope</key>
-				<string>markup.list.numbered</string>
+				<string>markup.list.numbered.markdown, markup.list.numbered.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -791,7 +817,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: bulleted list</string>
 				<key>scope</key>
-				<string>markup.list.unnumbered</string>
+				<string>markup.list.unnumbered.markdown, markup.list.unnumbered.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -802,7 +828,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: quote block and punctuation</string>
 				<key>scope</key>
-				<string>markup.quote</string>
+				<string>markup.quote.markdown</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -813,7 +839,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: block and inline block</string>
 				<key>scope</key>
-				<string>markup.raw.block, markup.raw.inline</string>
+				<string>markup.raw.block.markdown, markup.raw.inline.markdown, markup.raw.block.creole, markup.raw.inline.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -824,7 +850,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: links</string>
 				<key>scope</key>
-				<string>markup.underline.link, punctuation.definition.link.markdown</string>
+				<string>markup.underline.link.markdown, punctuation.definition.link.markdown, markup.underline.link.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -837,7 +863,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: images</string>
 				<key>scope</key>
-				<string>meta.image.inline.markdown, meta.image.reference.markdown</string>
+				<string>meta.image.inline.markdown, meta.image.reference.markdown, meta.image.inline.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -850,7 +876,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: link and reference url</string>
 				<key>scope</key>
-				<string>meta.link.inline.markdown, meta.link.reference.markdown</string>
+				<string>meta.link.inline.markdown, meta.link.reference.markdown, meta.link.inline.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -876,7 +902,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>markdown: punctuation for bold, italic, and inline block</string>
 				<key>scope</key>
-				<string>punctuation.definition.bold.markdown, punctuation.definition.italic.markdown, punctuation.definition.raw.markdown, punctuation.definition.heading.markdown</string>
+				<string>punctuation.definition.bold.markdown, punctuation.definition.italic.markdown, punctuation.definition.raw.markdown, punctuation.definition.heading.markdown, punctuation.definition.bold.creole, punctuation.definition.italic.creole, punctuation.definition.raw.creole, punctuation.definition.heading.creole, punctuation.definition.line-break.creole, punctuation.definition.link.creole, punctuation.definition.horizonlal-rule.creole</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
