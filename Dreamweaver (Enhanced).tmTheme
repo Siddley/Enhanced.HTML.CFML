@@ -1015,7 +1015,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>fontStyle</key>
 					<string></string>
 					<key>foreground</key>
-					<string>#ff00ff</string><!-- pink -->
+					<string>#000000</string><!-- black -->
 					<key>background</key>
 					<string></string>
 				</dict>
