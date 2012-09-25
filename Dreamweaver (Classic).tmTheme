@@ -249,9 +249,9 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 			<!-- variables between cfoutput and cfmail tags -->
 			<dict>
 				<key>name</key>
-				<string>cfml: variables between cfoutput tags</string>
+				<string>cfml: variables between cfoutput/mail tags</string>
 				<key>scope</key>
-				<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml constant.other, meta.scope.between-output-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end, meta.scope.between-mail-tags.cfml variable, meta.scope.between-mail-tags.cfml constant.other, meta.scope.between-mail-tags.cfml  punctuation.definition.bracket-begin, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-end</string>
+				<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml constant.other, meta.scope.between-output-tags.cfml punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end, meta.scope.between-mail-tags.cfml variable, meta.scope.between-mail-tags.cfml constant.other, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-begin, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-end,meta.scope.between-output-tags.cfml source.cfscript.embedded variable,meta.scope.between-output-tags.cfml source.cfscript.embedded constant,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.bracket-begin,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.bracket-end,meta.scope.between-mail-tags.cfml source.cfscript.embedded variable,meta.scope.between-mail-tags.cfml source.cfscript.embedded constant</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -265,7 +265,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>cfml: variables</string>
 				<key>scope</key>
-				<string>source.cfscript.embedded variable, source.cfscript.embedded constant, meta.tag.block.cf variable, meta.tag.inline.cf variable, source.cfscript.embedded  punctuation.definition.bracket-begin, source.cfscript.embedded punctuation.definition.bracket-end, source.sql.embedded variable.other, source.sql.embedded constant.other, source.sql.embedded  punctuation.definition.bracket-begin, source.sql.embedded punctuation.definition.bracket-end, punctuation.definition.seperator.variable</string>
+				<string>meta.tag.block.cf variable, meta.tag.inline.cf variable,meta.tag.block.cf variable, meta.tag.inline.cf variable,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.bracket-begin,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.bracket-end,source.sql.embedded variable.other,source.sql.embedded constant.other,source.sql.embedded punctuation.definition.bracket-begin,source.sql.embedded punctuation.definition.bracket-end,punctuation.definition.seperator.variable</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -279,7 +279,21 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>cfml: function names and braces</string>
 				<key>scope</key>
-				<string>meta.scope.between-output-tags.cfml support.function, meta.scope.between-output-tags.cfml punctuation.definition.function-parameters, meta.scope.between-output-tags.cfml entity.name.function-call.cfscript, meta.scope.between-mail-tags.cfml support.function, meta.scope.between-mail-tags.cfml punctuation.definition.function-parameters, meta.scope.between-mail-tags.cfml entity.name.function-call.cfscript, source.cfscript.embedded entity.name.function-call.cfscript, source.cfscript.embedded support.function, source.cfscript.embedded punctuation.definition.function-parameters, string.quoted.double.cfml support.function, string.quoted.single.cfml support.function, string.quoted.double.cfml punctuation.definition.function-parameters, string.quoted.single.cfml punctuation.definition.function-parameters, source.sql.embedded support.function, source.sql.embedded punctuation.definition.function-parameters</string>
+				<string>string.quoted.double.cfml support.function,string.quoted.single.cfml support.function,string.quoted.double.cfml punctuation.definition.function-parameters,string.quoted.single.cfml punctuation.definition.function-parameters,source.sql.embedded support.function,source.sql.embedded punctuation.definition.function-parameters,source.cfscript.embedded.cfml entity.name.function-call.cfscript,source.cfscript.embedded.cfml support.function,source.cfscript.embedded.cfml punctuation.definition.function-parameters,source.cfscript.embedded.cfml entity.name.function-call.cfscript,source.cfscript.embedded.cfml support.function,source.cfscript.embedded.cfml punctuation.definition.function-parameters,source.cfscript.embedded.cfml punctuation.definition.seperator.parameter</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#0000ff</string><!-- blueberry -->
+				</dict>
+			</dict>
+			<!-- functions between cfoutput and cfmail tags-->
+			<dict>
+				<key>name</key>
+				<string>cfml: function names and braces between tags</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml support.function,meta.scope.between-output-tags.cfml punctuation.definition.function-parameters,meta.scope.between-output-tags.cfml entity.name.function-call.cfscript,meta.scope.between-mail-tags.cfml support.function,meta.scope.between-mail-tags.cfml punctuation.definition.function-parameters,meta.scope.between-mail-tags.cfml entity.name.function-call.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html entity.name.function-call.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html support.function,meta.scope.between-output-tags.cfml source.cfscript.embedded.html punctuation.definition.function-parameters,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html entity.name.function-call.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html support.function,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html punctuation.definition.function-parameters,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.seperator.parameter,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.seperator.parameter</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -361,7 +375,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>cfml: quoted string (cfscript)</string>
 				<key>scope</key>
-				<string>meta.scope.between-output-tags.cfml string.quoted.double.cfscript, meta.scope.between-output-tags.cfml string.quoted.single.cfscript, source.cfscript.embedded string.quoted.double.cfscript, source.cfscript.embedded string.quoted.single.cfscript</string>
+				<string>meta.scope.between-output-tags.cfml string.quoted.double.cfscript,meta.scope.between-output-tags.cfml string.quoted.single.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html string.quoted.double.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html string.quoted.single.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html string.quoted.double.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html string.quoted.single.cfscript,source.cfscript.embedded.cfml string.quoted.single.cfscript,source.cfscript.embedded.cfml string.quoted.double.cfscript</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
