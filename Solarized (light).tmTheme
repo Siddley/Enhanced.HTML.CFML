@@ -1,0 +1,1097 @@
+<!--
+Enhanced HTML and CFML - Rich syntax highlighting of Coldfusion CFML and HTML in Sublime Text 2
+Copyright (C) 2012 Siddley
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>author</key>
+		<string>Siddley - https://github.com/Siddley</string>
+		<key>comment</key>
+		<string>Siddlarized (light) credit: http://ethanschoonover.com/solarized</string>
+		<key>name</key>
+		<string>Siddlarized (light)</string>
+		<key>settings</key>
+		<array>
+			<dict>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#fdf6e3</string><!-- base3 -->
+					<key>caret</key>
+					<string>#586e75</string><!-- base01 -->
+					<key>foreground</key>
+					<string>#657b83</string><!-- base00 -->
+					<key>invisibles</key>
+					<string>#eee8d5</string><!-- base2 -->
+					<key>lineHighlight</key>
+					<string>#eee8d5</string><!-- base2 -->
+					<key>selection</key>
+					<string>#eee8d5</string><!-- base2 -->
+					<key>shadow</key>
+					<string>#586e75</string><!-- base01 -->
+					<key>shadowWidth</key>
+					<string>6</string>
+				</dict>
+			</dict>
+			<!-- cfml comments -->
+			<dict>
+				<key>name</key>
+				<string>cfml: comment</string>
+				<key>scope</key>
+				<string>comment.block.cfml, comment.line.cfml</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+					<key>background</key>
+					<string>#eee8d5</string><!-- base2 -->
+				</dict>
+			</dict>
+			<!-- cfscript comments -->
+			<dict>
+				<key>name</key>
+				<string>cfml: cfscript Comment</string>
+				<key>scope</key>
+				<string>meta.tag.block.cf.script.cfml comment.line.double-slash.cfscript,meta.tag.block.cf.script.cfml comment.block.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<!-- html comments -->
+			<dict>
+				<key>name</key>
+				<string>html: comment</string>
+				<key>scope</key>
+				<string>comment.block.xml,comment.line.html,comment.block.html,comment.line.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<!-- html Constant characters -->
+			<dict>
+				<key>name</key>
+				<string>html: constant characters</string>
+				<key>scope</key>
+				<string>constant.character.entity.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string></string>
+				</dict>
+			</dict>
+			<!-- coldfusion tags -->
+			<dict>
+				<key>name</key>
+				<string>cfml: coldfusion tag</string>
+				<key>scope</key>
+				<string>meta.tag.inline.cf, meta.tag.block.cf, source.js.embedded.html entity.name.tag.script.html, source.js.embedded.html punctuation.definition.tag.html, source.js.embedded.html entity.other.attribute-name.html, source.js.embedded.html entity.other.attribute-name.cfml, source.css.embedded.html entity.name.tag.style.html, source.css.embedded.html punctuation.definition.tag.html, source.css.embedded.html entity.other.attribute-name.html, source.css.embedded.html entity.other.attribute-name.cfml</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#cb4b16</string><!-- orange -->
+				</dict>
+			</dict>
+			<!-- sgml & doctype tags -->
+			<dict>
+				<key>name</key>
+				<string>html: doctype</string>
+				<key>scope</key>
+				<string>entity.name.tag.doctype.html, meta.tag.sgml, string.quoted.double.doctype.identifiers-and-DTDs.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#839496</string><!-- base0 -->
+				</dict>
+			</dict>
+			<!-- xml & html tags -->
+			<dict>
+				<key>name</key>
+				<string>xml: html: tags</string>
+				<key>scope</key>
+				<string>meta.tag.no-content.xml,meta.tag.xml,meta.tag.preprocessor.xml,meta.tag.block.any.html,meta.tag.inline.any.html,meta.tag.structure.any.html,meta.tag.any.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+				</dict>
+			</dict>
+			<!-- html table tags -->
+			<dict>
+				<key>name</key>
+				<string>html: table tags</string>
+				<key>scope</key>
+				<string>entity.name.tag.table.html,entity.table.attribute-name.cfml,meta.tag.inline.table.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#6c71c4</string><!-- violet -->
+				</dict>
+			</dict>
+			<!-- html img tags -->
+			<dict>
+				<key>name</key>
+				<string>html: img tags</string>
+				<key>scope</key>
+				<string>entity.name.tag.img.html,entity.img.attribute-name.cfml,meta.tag.inline.img.html,meta.tag.block.object.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+				</dict>
+			</dict>
+			<!-- html form tags -->
+			<dict>
+				<key>name</key>
+				<string>html: form tags</string>
+				<key>scope</key>
+				<string>entity.name.tag.form.html,entity.form.attribute-name.cfml,meta.tag.inline.form.html,meta.tag.block.form.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<!-- html link tags -->
+			<dict>
+				<key>name</key>
+				<string>html: anchor tags</string>
+				<key>scope</key>
+				<string>entity.name.tag.link.html,entity.link.attribute-name.cfml,meta.tag.inline.link.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<!-- number constants -->
+			<dict>
+				<key>name</key>
+				<string>cfml: generic: numbers</string>
+				<key>scope</key>
+				<string>constant.numeric,constant.language</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+				</dict>
+			</dict>
+			<!-- keyword operators -->
+			<dict>
+				<key>name</key>
+				<string>cfml: generic: operators</string>
+				<key>scope</key>
+				<string>keyword.operator</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#6c71c4</string><!-- violet -->
+				</dict>
+			</dict>
+			<!-- query operators -->
+			<dict>
+				<key>name</key>
+				<string>sql: query keywords</string>
+				<key>scope</key>
+				<string>keyword.other.DML, support.function.aggregate.sql, keyword.other.alias.sql, keyword.other.order.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+				</dict>
+			</dict>
+			<!-- variables between cfoutput and cfmail tags -->
+			<dict>
+				<key>name</key>
+				<string>cfml: variables between cfoutput/mail tags</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml variable, meta.scope.between-output-tags.cfml constant.other, meta.scope.between-output-tags.cfml punctuation.definition.bracket-begin, meta.scope.between-output-tags.cfml punctuation.definition.bracket-end, meta.scope.between-mail-tags.cfml variable, meta.scope.between-mail-tags.cfml constant.other, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-begin, meta.scope.between-mail-tags.cfml punctuation.definition.bracket-end,meta.scope.between-output-tags.cfml source.cfscript.embedded variable,meta.scope.between-output-tags.cfml source.cfscript.embedded constant,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.bracket-begin,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.bracket-end,meta.scope.between-mail-tags.cfml source.cfscript.embedded variable,meta.scope.between-mail-tags.cfml source.cfscript.embedded constant</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- variables in cfscript -->
+			<dict>
+				<key>name</key>
+				<string>cfml: variables</string>
+				<key>scope</key>
+				<string>meta.tag.block.cf variable, meta.tag.inline.cf variable,meta.tag.block.cf variable, meta.tag.inline.cf variable,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.bracket-begin,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.bracket-end,source.sql.embedded variable.other,source.sql.embedded constant.other,source.sql.embedded punctuation.definition.bracket-begin,source.sql.embedded punctuation.definition.bracket-end,punctuation.definition.seperator.variable,source.cfscript.embedded constant.other</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- functions -->
+			<dict>
+				<key>name</key>
+				<string>cfml: function names and braces</string>
+				<key>scope</key>
+				<string>string.quoted.double.cfml support.function,string.quoted.single.cfml support.function,string.quoted.double.cfml punctuation.definition.function-parameters,string.quoted.single.cfml punctuation.definition.function-parameters,source.sql.embedded support.function,source.sql.embedded punctuation.definition.function-parameters,source.cfscript.embedded.cfml entity.name.function-call.cfscript,source.cfscript.embedded.cfml support.function,source.cfscript.embedded.cfml punctuation.definition.function-parameters,source.cfscript.embedded.cfml entity.name.function-call.cfscript,source.cfscript.embedded.cfml support.function,source.cfscript.embedded.cfml punctuation.definition.function-parameters,source.cfscript.embedded.cfml punctuation.definition.seperator.parameter</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- functions between cfoutput and cfmail tags-->
+			<dict>
+				<key>name</key>
+				<string>cfml: function names and braces between tags</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml support.function,meta.scope.between-output-tags.cfml punctuation.definition.function-parameters,meta.scope.between-output-tags.cfml entity.name.function-call.cfscript,meta.scope.between-mail-tags.cfml support.function,meta.scope.between-mail-tags.cfml punctuation.definition.function-parameters,meta.scope.between-mail-tags.cfml entity.name.function-call.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html entity.name.function-call.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html support.function,meta.scope.between-output-tags.cfml source.cfscript.embedded.html punctuation.definition.function-parameters,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html entity.name.function-call.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html support.function,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html punctuation.definition.function-parameters,meta.scope.between-output-tags.cfml source.cfscript.embedded punctuation.definition.seperator.parameter,meta.scope.between-mail-tags.cfml source.cfscript.embedded punctuation.definition.seperator.parameter</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- hashes embedded in html -->
+			<dict>
+				<key>name</key>
+				<string>cfml: hashes</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml punctuation.definition.hash.begin,meta.scope.between-output-tags.cfml punctuation.definition.hash.end, meta.scope.between-mail-tags.cfml punctuation.definition.hash.begin,meta.scope.between-mail-tags.cfml punctuation.definition.hash.end</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- hashes embedded in cfml -->
+			<dict>
+				<key>name</key>
+				<string>cfml: hash in cfscript</string>
+				<key>scope</key>
+				<string>punctuation.definition.hash.begin.cfml, punctuation.definition.hash.end.cfml, meta.inline.hash.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<!-- illegal or invalid characters -->
+			<dict>
+				<key>name</key>
+				<string>cfml: invalid – illegal</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml invalid.illegal.unescaped.hash, meta.scope.between-mail-tags.cfml invalid.illegal.unescaped.hash</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#dc322f</string><!-- red -->
+					<key>fontStyle</key>
+					<string>italic underline</string>
+					<key>foreground</key>
+					<string>#eee8d5</string>
+				</dict>
+			</dict>
+			<!-- html quoted strings -->
+			<dict>
+				<key>name</key>
+				<string>xml: html: quoted string</string>
+				<key>scope</key>
+				<string>string.quoted.double.html, string.quoted.single.html,string.quoted.double.xml, string.quoted.single.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#839496</string><!-- base0 -->
+				</dict>
+			</dict>
+			<!-- cfml quoted strings -->
+			<dict>
+				<key>name</key>
+				<string>cfml: quoted string</string>
+				<key>scope</key>
+				<string>string.quoted.double.cfml, string.quoted.single.cfml</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<!-- cfscript quoted strings -->
+			<dict>
+				<key>name</key>
+				<string>cfml: quoted string (cfscript)</string>
+				<key>scope</key>
+				<string>meta.scope.between-output-tags.cfml string.quoted.double.cfscript,meta.scope.between-output-tags.cfml string.quoted.single.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html string.quoted.double.cfscript,meta.scope.between-output-tags.cfml source.cfscript.embedded.html string.quoted.single.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html string.quoted.double.cfscript,meta.scope.between-mail-tags.cfml source.cfscript.embedded.html string.quoted.single.cfscript,source.cfscript.embedded.cfml string.quoted.single.cfscript,source.cfscript.embedded.cfml string.quoted.double.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<!-- invalid code -->
+			<dict>
+				<key>name</key>
+				<string>generic: invalid – deprecated</string>
+				<key>scope</key>
+				<string>invalid.deprecated</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold italic underline</string>
+					<key>foreground</key>
+					<string>#dc322f</string><!-- red -->
+				</dict>
+			</dict>
+			<!-- For css files (stylesheets) -->
+			<dict>
+				<key>name</key>
+				<string>css: comments</string>
+				<key>scope</key>
+				<string>punctuation.definition.comment.css, comment.block.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: constant</string>
+				<key>scope</key>
+				<string>constant.numeric.css, meta.property-value.css constant.other</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: tag names</string>
+				<key>scope</key>
+				<string>entity.name.tag.css, entity.name.tag.wildcard.css, meta.selector.css,meta.attribute-selector.css,  punctuation.definition.entity.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: attribute selector</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name.pseudo-class.ui-state.css, entity.other.attribute-name.pseudo-element.css,  entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.id.css, punctuation.section.function.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: attribute names</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name.attribute.css,  entity.other.attribute-name.class.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: control</string>
+				<key>scope</key>
+				<string>keyword.control.at-rule.charset.css, keyword.control.at-rule.font-face.css, keyword.control.at-rule.import.css, keyword.control.at-rule.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: operators</string>
+				<key>scope</key>
+				<string>keyword.operator.arithmetic.css, keyword.operator.logic.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: other keywords</string>
+				<key>scope</key>
+				<string>keyword.other.important.css, keyword.other.unit.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: quoted strings</string>
+				<key>scope</key>
+				<string>string.quoted.double.attribute-value.css, string.quoted.double.css, string.quoted.single.css, string.unquoted.attribute-value.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: support constant</string>
+				<key>scope</key>
+				<string>meta.property-value.css support.constant, meta.property-value.css, meta.property-list.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: support function</string>
+				<key>scope</key>
+				<string>support.function.misc.css, support.function.url.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: properties</string>
+				<key>scope</key>
+				<string>support.type.property-name.css, support.type.property-name.media.css, meta.property-name.css, punctuation.separator.key-value.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#657b83</string><!-- base00 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: miscellaneous</string>
+				<key>scope</key>
+				<string>variable.parameter.misc.css, variable.parameter.url.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#657b83</string><!-- base00 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>css: at-rules</string>
+				<key>scope</key>
+				<string>meta.at-rule.charset.css, meta.at-rule.font-face.css, meta.at-rule.import.css, meta.at-rule.media.css, punctuation.terminator.rule.css, punctuation.section.property-list.css, source.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+				</dict>
+			</dict>
+			<!-- Javascript code -->
+			<dict>
+				<key>name</key>
+				<string>js: comments</string>
+				<key>scope</key>
+				<string>comment.block.documentation.js, comment.block.html.js, comment.block.js, comment.line.js, comment.line.double-slash.js, comment.block.js</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: language constants</string>
+				<key>scope</key>
+				<string>constant.character.escape.js, constant.language.boolean.false.js, constant.language.boolean.true.js, constant.language.null.js,constant.language.js</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>background</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: numeric constant</string>
+				<key>scope</key>
+				<string>constant.numeric.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: entity names</string>
+				<key>scope</key>
+				<string>entity.name.function.js, entity.name.type.instance.js, entity.name.type.object.js.firebug</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js:operators</string>
+				<key>scope</key>
+				<string>keyword.operator.js, keyword.operator.new.js</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: control</string>
+				<key>scope</key>
+				<string>keyword.control.js, keyword.other.js</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: braces</string>
+				<key>scope</key>
+				<string>meta.brace.curly.js, meta.brace.round.js, meta.brace.square.js, source.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#657b83</string><!-- base00 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: strings</string>
+				<key>scope</key>
+				<string>string.quoted.double.js, string.quoted.single.js, string.regexp.js</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: statement terminator</string>
+				<key>scope</key>
+				<string>punctuation.terminator.statement.js</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: support constant</string>
+				<key>scope</key>
+				<string>support.constant.js, support.type.js, support.constant.dom.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: support function</string>
+				<key>scope</key>
+				<string>support.function.js.firebug, support.function.dom.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: support class</string>
+				<key>scope</key>
+				<string>support.class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: storage</string>
+				<key>scope</key>
+				<string>variable.language.js, storage.type.js, storage.modifier.js, storage.type.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>js: variable</string>
+				<key>scope</key>
+				<string>variable.parameter.function.js, support.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#586e75</string><!-- base01 -->
+				</dict>
+			</dict>
+			<!-- For markdown text files -->
+			<dict>
+				<key>name</key>
+				<string>markdown: invalid illegal</string>
+				<key>scope</key>
+				<string>invalid.illegal.whitespace.markdown, invalid.illegal.punctuation.link.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#dc322f</string><!-- red -->
+					<key>fontStyle</key>
+					<string>italic underline</string>
+					<key>foreground</key>
+					<string>#eee8d5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: special characters</string>
+				<key>scope</key>
+				<string>constant.character.escape.markdown, constant.other.reference.link.markdown, constant.character.escape.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#6c71c4</string><!-- violet -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: bold</string>
+				<key>scope</key>
+				<string>markup.bold.markdown, markup.bold.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: bold italic</string>
+				<key>scope</key>
+				<string>markup.bold.markdown markup.italic.markdown, markup.bold.creole markup.italic.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold italic</string>
+					<key>foreground</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: headings</string>
+				<key>scope</key>
+				<string>markup.heading.markdown, markup.heading.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#586e75</string><!-- base01 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: italic</string>
+				<key>scope</key>
+				<string>markup.italic.markdown, markup.italic.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: italic bold</string>
+				<key>scope</key>
+				<string>markup.italic.markdown markup.bold.markdown, markup.italic.creole markup.bold.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold italic</string>
+					<key>foreground</key>
+					<string>#586e75</string><!-- base01 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: numbered list</string>
+				<key>scope</key>
+				<string>markup.list.numbered.markdown, markup.list.numbered.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: bulleted list</string>
+				<key>scope</key>
+				<string>markup.list.unnumbered.markdown, markup.list.unnumbered.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+                    <string>#b58900</string><!-- yellow -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: quote block and punctuation</string>
+				<key>scope</key>
+				<string>markup.quote.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#6c71c4</string><!-- violet -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: block and inline block</string>
+				<key>scope</key>
+				<string>markup.raw.block.markdown, markup.raw.inline.markdown, punctuation.definition.raw.markdown, markup.raw.block.creole, markup.raw.inline.creole,  punctuation.definition.raw.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: links</string>
+				<key>scope</key>
+				<string>markup.underline.link.markdown, punctuation.definition.link.markdown, markup.underline.link.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: images</string>
+				<key>scope</key>
+				<string>meta.image.inline.markdown, meta.image.reference.markdown, meta.image.inline.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: link and reference url</string>
+				<key>scope</key>
+				<string>meta.link.inline.markdown, meta.link.reference.markdown, meta.link.inline.creole, punctuation.definition.link.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: id definitions</string>
+				<key>scope</key>
+				<string>meta.link.reference.def.markdown, meta.link.reference.literal.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#6c71c4</string><!-- violet -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>markdown: punctuation for bold, italic, and inline block</string>
+				<key>scope</key>
+				<string>punctuation.definition.bold.markdown, punctuation.definition.italic.markdown, punctuation.definition.heading.markdown, punctuation.definition.bold.creole, punctuation.definition.italic.creole, punctuation.definition.heading.creole, punctuation.definition.line-break.creole,  punctuation.definition.horizonlal-rule.creole</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+				</dict>
+			</dict>
+			<!-- Diff -->
+            <dict>
+                <key>name</key>
+                <string>diff: from-file </string>
+                <key>scope</key>
+                <string>meta.diff.header.from-file</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic</string>
+                    <key>foreground</key>
+                    <string>#dc322f</string><!-- red -->
+                    <key>background</key>
+                    <string></string><!-- base2 -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>diff: from-file </string>
+                <key>scope</key>
+                <string>meta.diff.header.to-file</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic</string>
+                    <key>foreground</key>
+                    <string>#2aa198</string><!-- cyan -->
+                    <key>background</key>
+                    <string></string><!-- base2 -->
+                </dict>
+            </dict>
+			<dict>
+				<key>name</key>
+				<string>diff: from-file </string>
+				<key>scope</key>
+				<string>markup.deleted.diff</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#dc322f</string><!-- red -->
+					<key>background</key>
+					<string>#eee8d5</string><!-- base2 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>diff: to-file </string>
+				<key>scope</key>
+				<string>markup.inserted.diff</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+			        <key>background</key>
+					<string>#eee8d5</string><!-- base2 -->
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>diff: range </string>
+				<key>scope</key>
+				<string>meta.diff.range</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#d33682</string><!-- magenta -->
+					<key>background</key>
+					<string></string><!-- base2 -->
+				</dict>
+			</dict>
+			<!-- json -->
+			<dict>
+				<key>name</key>
+				<string>json: comments</string>
+				<key>scope</key>
+				<string>punctuation.definition.comment.json, comment.block.documentation.json, comment.block.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#93a1a1</string><!-- base1 -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: array punctuation</string>
+				<key>scope</key>
+				<string>punctuation.definition.array.begin.json, punctuation.definition.array.end.json, punctuation.separator.array.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#cb4b16</string><!-- orange -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: invalid – illegal</string>
+				<key>scope</key>
+				<string>invalid.illegal.unrecognized-string-escape.json, invalid.illegal.expected-dictionary-separator.json, invalid.illegal.expected-array-separator.json</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#dc322f</string><!-- red -->
+					<key>fontStyle</key>
+					<string>italic underline</string>
+					<key>foreground</key>
+					<string>#eee8d5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: dictionary punctuation</string>
+				<key>scope</key>
+				<string>punctuation.definition.dictionary.begin.json, punctuation.definition.dictionary.end.json, punctuation.separator.dictionary.key-value.json, punctuation.separator.dictionary.pair.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#268bd2</string><!-- blue -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: dictionary string values</string>
+				<key>scope</key>
+				<string>meta.structure.dictionary.value.json, constant.language.json, constant.numeric.json, meta.structure.dictionary.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#859900</string><!-- green -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>json: string values</string>
+				<key>scope</key>
+				<string>meta.structure.array.json string.quoted.double.json</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#2aa198</string><!-- cyan -->
+					<key>background</key>
+					<string></string>
+				</dict>
+			</dict>
+		</array>
+		<key>uuid</key>
+		<string>9bf2d54d-7c19-4199-892c-4413c54a5d9c</string>
+	</dict>
+</plist>
