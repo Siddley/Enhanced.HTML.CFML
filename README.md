@@ -22,10 +22,10 @@ This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlig
   * `.JSON` and `.sublime-settings` files.
   * Sublime `diff`
 
-##### Colour Themes
+##### Colour Themes - [Screenshots](https://github.com/Siddley/Enhanced.HTML.CFML/wiki)
 
-  * **Dreamweaver (Classic)** colour theme. Attempts to mimic the actual Adobe™ Dreamweaver™ look as accurately as possible. https://github.com/Siddley/Enhanced.HTML.CFML/wiki/Dreamweaver™-(Classic)-Screenshots
-  * **Dreamweaver (Enhanced)** colour theme. Incorporates some changes and enhancements to the classic look to better highlight embedded ColdFusion variables and functions while maintaining much the same feel. https://github.com/Siddley/Enhanced.HTML.CFML/wiki/Dreamweaver™-(Enhanced)-Screenshots
+  * **Dreamweaver (Classic)** colour theme. Attempts to mimic the actual Adobe™ Dreamweaver™ look as accurately as possible.
+  * **Dreamweaver (Enhanced)** colour theme. Incorporates some changes and enhancements to the classic look to better highlight embedded ColdFusion variables and functions while maintaining much the same feel.
   * **Siddley (Solarized)** (coming soon). Uses Ethan Schoonover's awesome solarized colour scheme to create both a dark and light version with rich syntax highlighting.
   * **CFBuilder** colour theme (coming soon). Attempts to mimic the actual Adobe™ CFBuilder™ look as accurately as possible.
   * Suggestions are welcome, please raise an issue to request features
