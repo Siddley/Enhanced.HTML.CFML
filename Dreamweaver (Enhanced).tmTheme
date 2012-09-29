@@ -73,7 +73,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<key>foreground</key>
 					<string>#808080</string><!-- nickel -->
 					<key>background</key>
-					<string></string>
+					<string>#fbffdb</string><!-- daffodil -->
 				</dict>
 			</dict>
 			<!-- html comments -->
