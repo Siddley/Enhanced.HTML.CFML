@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Enhanced HTML and CFML - Rich syntax highlighting of Coldfusion CFML and HTML in Sublime Text 2
 Copyright (C) 2012 Siddley
@@ -10,8 +11,6 @@ You should have received a copy of the GNU General Public License along with thi
 
 Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -120,7 +119,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<string>#cb4b16</string><!-- orange -->
 				</dict>
 			</dict>
-			<!-- sgml & doctype tags -->
+			<!-- sgml and doctype tags -->
 			<dict>
 				<key>name</key>
 				<string>html: doctype</string>
@@ -134,7 +133,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 					<string>#839496</string><!-- base0 -->
 				</dict>
 			</dict>
-			<!-- xml & html tags -->
+			<!-- xml and html tags -->
 			<dict>
 				<key>name</key>
 				<string>xml: html: tags</string>
@@ -329,7 +328,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 			<!-- illegal or invalid characters -->
 			<dict>
 				<key>name</key>
-				<string>cfml: invalid – illegal</string>
+				<string>cfml: invalid - illegal</string>
 				<key>scope</key>
 				<string>meta.scope.between-output-tags.cfml invalid.illegal.unescaped.hash, meta.scope.between-mail-tags.cfml invalid.illegal.unescaped.hash</string>
 				<key>settings</key>
@@ -387,7 +386,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 			<!-- invalid code -->
 			<dict>
 				<key>name</key>
-				<string>generic: invalid – deprecated</string>
+				<string>generic: invalid - deprecated</string>
 				<key>scope</key>
 				<string>invalid.deprecated</string>
 				<key>settings</key>
@@ -1032,7 +1031,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>json: invalid – illegal</string>
+				<string>json: invalid - illegal</string>
 				<key>scope</key>
 				<string>invalid.illegal.unrecognized-string-escape.json, invalid.illegal.expected-dictionary-separator.json, invalid.illegal.expected-array-separator.json</string>
 				<key>settings</key>
