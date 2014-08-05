@@ -64,7 +64,7 @@ Siddley can be contacted at <https://github.com/Siddley/Enhanced.HTML.CFML>
 				<key>name</key>
 				<string>cfml: cfscript Comment</string>
 				<key>scope</key>
-				<string>meta.tag.block.cf.script.cfml comment.line.double-slash.cfscript,meta.tag.block.cf.script.cfml comment.block.cfscript</string>
+				<string>comment.line.double-slash.cfscript, comment.block.cfscript</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
