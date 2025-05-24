@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlighting in Sublime Text 2.
+This package is designed to provide rich HTML & CFML (ColdFusion) syntax highlighting in Sublime Text 2. It is no longer maintained.
 
 ### Features
 
